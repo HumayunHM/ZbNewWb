@@ -23,7 +23,7 @@
     <div class="container h-full min-w-full bg-none">
         <nav class="flex justify-between mx-10 my-5">
             <img src="assets/logo.png" alt="Zabani" class="w-40 cursor-pointer">
-            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-semibold text-[#001042] focus:outline-none bg-[#7ED6DF] rounded-lg border border-gray-20">Join Beta Progam</button>
+            <button class="cursor-pointer transition-all bg-[#7ED6DF] text-[#001042] px-6 py-2 rounded-lg border-[#22A6B3] border-b-[4px] hover:-translate-y-[2px] hover:border-b-[6px] active:border-b-[2px]  active:translate-y-[4px]">Join Beta Program</button>
         </nav>
         <main class="flex justify-between items-center mx-10 text-[#001042]">
             <div class="font-['Inter'] font-semibold max-w-[50%] my-20">
@@ -38,14 +38,32 @@
                 <img src="assets/mockup.png" alt="Zabani" class="w-3/4 h-auto">
             </div>
         </main>
-        <footer class="flex justify-center mt-20 pb-20">
-            <div class="mx-2">
-                <input type="email" id="helper-text" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="youremail@email.com">
-                <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">Get notified when Zabani is released.</p>
-            </div>
-            <div class="mx-2">
-                <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Submit</button>
-            </div>
+        <footer class="flex justify-center flex-col items-center mt-20 pb-20">
+            <div class="relative mt-6">
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  autocomplete="email"
+                  aria-label="Email address"
+                  class="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
+                />
+                <div class="absolute inset-y-1 right-1 flex justify-end">
+                  <button
+                    type="submit"
+                    aria-label="Submit"
+                    class="flex aspect-square h-full items-center justify-center rounded-xl bg-[#7ED6DF] text-white transition hover:bg-[#22A6B3]">
+                    <svg viewBox="0 0 16 6" aria-hidden="true" class="w-4">
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16 3 10 .5v2H0v1h10v2L16 3Z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <p class="text-sm text-gray-500 mt-2 text-center">Get Updated when Zabani Releases!</p>
         </footer>
     </div>
 </body>
